@@ -1,0 +1,16 @@
+name = "longlove-backend"
+main = "index.mjs"
+compatibility_date = "2026-10-01"
+
+[triggers]
+crons = ["* * * * *"]
+
+[vars]
+ALLOWED_ORIGIN = "https://tong0617c.github.io"
+SITE_URL = "https://tong0617c.github.io/LongLove"
+BARK_SERVER = "https://api.day.app"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "longlove-private"
+database_id = "REPLACE_WITH_YOUR_D1_DATABASE_ID"
