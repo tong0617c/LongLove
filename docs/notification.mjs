@@ -1,0 +1,2 @@
+export function receiveState(previous,incoming,preferred=previous?.selected){if(incoming.roles.some(r=>r.id===preferred))incoming.selected=preferred;return incoming;}
+export function notificationLink(site,event){const url=new URL(site.replace(/\/$/,'')+'/');url.searchParams.set('notice','1');url.searchParams.set('page',event.page||'chat');if(event.role)url.searchParams.set('role',event.role);if(event.messageId)url.searchParams.set('message',event.messageId);return url.href;}

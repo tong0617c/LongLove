@@ -24,4 +24,4 @@ backend/ 为独立 Cloudflare Worker，提供 D1 与 Cron + Bark 通知。GitHub
 
 ## 验证
 
-Node.js 24+：node --test tests/engine.test.mjs tests/backend.test.mjs tests/choice.test.mjs tests/stickers.test.mjs tests/delete.test.mjs tests/stitch.test.mjs
+Node.js 24+：node --test tests/*.test.mjs
